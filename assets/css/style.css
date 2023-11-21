@@ -577,6 +577,7 @@ section {
 }
 .about .skills-content {
   margin-top: 30px;
+  position: relative;
 }
 .tools .skills-content .progress {
   height: 60px;
@@ -585,15 +586,27 @@ section {
   border-radius: 0;
   margin-left: 40px;
   margin-right: 40px;
+  position: relative;
 }
+.tools .skills-content .logos-container {
+  padding-top: 30px;  
+  display: block;
+  background: none;
+  border-radius: 0;
+  margin-left: 40px;  
+  margin-right: 40px;
+  position: relative;
+}
+
+
 .tools .skills-content .progress .skill {
   padding: 10px 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
+  margin: 0 0 6px 0;  
   display: block;
-  font-weight: 700;  
+  font-weight: 600;  
   font-family: "Raleway", sans-serif;
   color: #eee;
+  position: relative;
 }
 .tools .skills-content .progress .skill .val {
   float: right;
@@ -718,6 +731,28 @@ color: rgb(255, 255, 255);
 /*--------------------------------------------------------------
 # tools
 --------------------------------------------------------------*/
+.logos{
+margin-right: 20px;
+margin-bottom: 10px;
+width: 40px;
+height: 40px; 
+}
+
+.tools .icon-box {
+  /*padding: 30px;*/
+  position: relative;
+  /*overflow: hidden; */   
+  transition: all 0.3s ease-in-out;
+  /*text-align: center;*/  
+}
+.tools .icon {
+  margin: 0 auto 20px auto;
+  padding-top: 17px;
+  display: inline-block;
+  text-align: center;  
+  width: 72px;
+  height: 72px;  
+}
 .tools {
   padding: 30px 0;
   background: url("../img/skills.jpg") no-repeat;
@@ -744,7 +779,7 @@ color: rgb(255, 255, 255);
   margin: 0;
 }
 #tools .section-title h2 {
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -827,15 +862,7 @@ color: rgb(255, 255, 255);
   color: #ddd;
   margin: 15px 0 15px 0;
 }
-.tools .icon-box {  
-  padding-left: 20px;
-  padding-right: 20px;
-  position: relative;
-  overflow: hidden;  
-  transition: all 0.3s ease-in-out;
-  /*text-align: center;
-  /*border: 0.05px solid #ffb727;*/
-}
+
 .tools .testimonial-item .quote-icon-left, .tools .testimonial-item .quote-icon-right {
   color: rgba(255, 255, 255, 0.4);
   font-size: 26px;
@@ -919,11 +946,11 @@ color: rgb(255, 255, 255);
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(69, 80, 91, 0.8);
+  background: rgba(0, 0, 0, 0.3);
 }
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.3);
   position: absolute;
   left: 30px;
   right: 30px;
@@ -955,9 +982,7 @@ color: rgb(255, 255, 255);
   height: 48px;
   position: absolute;
   top: 35px;
-  left: 35px;
-  border-top: 3px solid #d7dce1;
-  border-left: 3px solid #d7dce1;
+  left: 35px;  
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -968,24 +993,22 @@ color: rgb(255, 255, 255);
   height: 48px;
   position: absolute;
   bottom: 35px;
-  right: 35px;
-  border-bottom: 3px solid #d7dce1;
-  border-right: 3px solid #d7dce1;
+  right: 35px;  
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #45505b;
+  color: #ffb727;
   font-weight: 600;
 }
 .portfolio .portfolio-wrap .portfolio-info h5 {
   font-size: 14px;
   margin-top: 10px;
-  color: #45505b;  
+  color: #ffb727;  
 }
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #45505b;
+  color: #ffb727;
   font-size: 14px;  
   padding: 0;
   margin: 0;
@@ -995,8 +1018,8 @@ color: rgb(255, 255, 255);
   z-index: 4;
 }
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #45505b;
-  margin: 0 2px;
+  color: #ffb727;  
+  margin: 0 0px;
   font-size: 28px;
   display: inline-block;
   transition: 0.3s;
